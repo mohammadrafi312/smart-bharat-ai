@@ -1,59 +1,25 @@
 export default function Hero() {
-
   return (
-
-    <section className="px-10 py-24 text-center">
-
-
-      <div className="text-5xl mb-5">
-        ✨
+    <section className="min-h-screen flex items-center justify-center text-center px-6">
+      <div>
+        <div className="text-7xl mb-6">🤖🇮🇳</div>
+        <h1 className="text-7xl font-black leading-tight">
+          India&apos;s Smart
+          <br />
+          <span className="gradient-text">AI Civic Companion</span>
+        </h1>
+        <p className="text-gray-300 max-w-3xl mx-auto text-xl mt-8">
+          Experience the future of citizen services with Gemini-powered AI. Find schemes, manage documents and report civic issues instantly.
+        </p>
+        <div className="mt-12 flex justify-center gap-6">
+          <button className="bg-blue-600 px-10 py-4 rounded-2xl text-lg font-bold hover:scale-105 duration-300">
+            Start Assistant 🚀
+          </button>
+          <button className="glass px-10 py-4 rounded-2xl text-lg hover:scale-105 duration-300">
+            Explore Services
+          </button>
+        </div>
       </div>
-
-
-      <h1 className="text-6xl font-bold mb-6">
-
-        Your AI Powered <br />
-
-        <span className="text-blue-400">
-
-          Civic Companion
-
-        </span>
-
-      </h1>
-
-
-      <p className="max-w-3xl mx-auto text-gray-400 text-xl">
-
-        Access government services, understand schemes,
-        report public issues and receive personalized help
-        using Generative AI.
-
-      </p>
-
-
-      <div className="mt-10 flex justify-center gap-5">
-
-
-        <button className="bg-blue-600 px-8 py-3 rounded-xl">
-
-          Ask AI Assistant
-
-        </button>
-
-
-        <button className="border border-white/20 px-8 py-3 rounded-xl">
-
-          Report Issue
-
-        </button>
-
-
-      </div>
-
-
     </section>
-
-  );
-
+  )
 }

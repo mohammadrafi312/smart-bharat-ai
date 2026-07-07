@@ -34,7 +34,7 @@ export default function ChatBot() {
         <option>Telugu</option>
         <option>Tamil</option>
       </select>
-      <div className="bg-slate-900 p-8 rounded-xl">
+      <div className="glass p-8 rounded-3xl hover:scale-105 duration-300 shadow-xl">
         <textarea
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
