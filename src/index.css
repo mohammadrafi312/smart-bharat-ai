@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+* {
+  transition: background-color 0.3s, border 0.3s, transform 0.3s;
+}
+
+::selection {
+  background: #3b82f6;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -23,4 +32,8 @@ body {
   background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.glow:hover {
+  box-shadow: 0 0 40px #3b82f6;
 }
