@@ -1,38 +1,114 @@
 # 🇮🇳 Smart Bharat AI - AI Powered Civic Companion
 
-Smart Bharat AI is a Generative AI powered civic platform built for PromptWars x Global Prompt Challenge 2026.
+## Challenge Vertical
 
-## 🚀 Features
+Societal Benefit / Citizen Services
 
-- 🤖 Gemini AI Civic Assistant
-- 🏛 Government Service Recommendation
-- 📄 Document Requirement Assistance
-- 📝 Public Issue Reporting
-- 📊 Complaint Tracking
-- 🌐 Multilingual Support
+## Problem Statement
 
+Citizens often struggle to understand government schemes, required documents, and service processes because information is complex and scattered.
 
-## 🧠 AI Workflow
+Smart Bharat AI solves this using Generative AI.
 
-User Query
+## Solution Overview
+
+Smart Bharat AI is an intelligent civic assistant that helps citizens:
+
+- Access government services
+- Understand schemes
+- Find required documents
+- Report public issues
+- Track complaints
+- Get multilingual assistance
+
+## AI Workflow
+
+User Input
+
 ↓
-Gemini AI Processing
+
+Context Understanding using Gemini AI
+
 ↓
+
 Intent Detection
+
 ↓
-Personalized Government Guidance
+
+Category Identification:
+- Schemes
+- Documents
+- Public Services
+- Complaints
+
 ↓
-Multilingual Response
 
+Personalized Response Generation
 
-## 🛠 Tech Stack
+## Decision Logic
 
+The AI analyzes user needs and provides relevant civic guidance.
+
+Example:
+
+Input:
+"I am a student, what schemes are available?"
+
+AI detects:
+Persona → Student
+
+Category → Government Benefits
+
+Output:
+Relevant schemes and steps
+
+## Tech Stack
+
+Frontend:
 - React + Vite
 - Tailwind CSS
+- Framer Motion
+
+AI:
 - Google Gemini API
-- Vercel Deployment
 
+Deployment:
+- Vercel
 
-## Impact
+## Features
 
-Making government services simpler, faster, and more accessible through AI.
+🤖 Gemini Civic Assistant
+
+🏛 Government Scheme Recommendation
+
+📄 Document Guidance
+
+📝 Complaint Management
+
+🌐 Multilingual Support
+
+📱 Responsive UI
+
+## Security
+
+- API keys stored using environment variables
+- Sensitive data ignored using .gitignore
+
+## Accessibility
+
+- Responsive design
+- Clear navigation
+- High contrast interface
+- Simple citizen-friendly language
+
+## Future Scope
+
+- Voice assistant
+- Real government API integration
+- Complaint status notifications
+
+## Built For
+
+PromptWars x Global Prompt Challenge 2026
+
+Google For Developers | DEVENGERS
