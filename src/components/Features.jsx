@@ -3,23 +3,23 @@ import { motion } from 'framer-motion'
 const data = [
   {
     icon: '🤖',
-    title: 'AI Assistant',
-    desc: 'Ask questions about government services using Gemini AI',
+    title: 'Smart AI Assistant',
+    desc: 'Ask civic questions and receive instant AI-powered guidance in simple language.',
   },
   {
     icon: '🏛️',
-    title: 'Scheme Finder',
-    desc: 'Discover eligible schemes and public services',
+    title: 'AI Scheme Finder',
+    desc: 'Get personalized government scheme recommendations based on your profile and eligibility.',
   },
   {
     icon: '📄',
-    title: 'Document Help',
-    desc: 'Know required documents instantly',
+    title: 'Document Guide',
+    desc: 'Understand required documents and application steps for public services.',
   },
   {
-    icon: '🌎',
-    title: 'Multilingual',
-    desc: 'Access civic help in regional languages',
+    icon: '🌐',
+    title: 'Multilingual Access',
+    desc: 'Connect with government information easily in multiple Indian languages.',
   },
 ]
 
