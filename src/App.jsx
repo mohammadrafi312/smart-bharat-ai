@@ -5,6 +5,7 @@ import Stats from './components/Stats'
 import ChatBot from './components/ChatBot'
 import SchemeFinder from './components/SchemeFinder'
 import Complaint from './components/Complaint'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ChatBot />
       <SchemeFinder />
       <Complaint />
+      <Footer />
     </div>
   )
 }
