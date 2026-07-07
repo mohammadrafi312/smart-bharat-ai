@@ -3,7 +3,20 @@ import AIButton from './AIButton'
 
 export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center text-center px-6 relative overflow-hidden">
+    <section
+      id="home"
+      className="
+        min-h-screen
+        grid
+        md:grid-cols-2
+        items-center
+        gap-10
+        px-20
+        py-24
+        relative
+        overflow-hidden
+      "
+    >
       <div className="absolute top-40 left-20 text-6xl animate-bounce opacity-30">⚙️</div>
       <div className="absolute bottom-40 right-20 text-7xl animate-pulse opacity-30">✨</div>
       <div className="absolute top-1/2 right-40 text-5xl animate-bounce opacity-30">🔷</div>
@@ -21,6 +34,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 80 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
+        className="text-left z-10"
       >
         <motion.div
           animate={{ y: [0, -20, 0] }}
@@ -30,40 +44,52 @@ export default function Hero() {
           🤖🇮🇳
         </motion.div>
 
-        <div
-          className="
-            inline-flex
-            items-center
-            gap-2
-            px-5
-            py-2
-            rounded-full
-            bg-blue-100
-            text-blue-700
-            font-semibold
-            mb-8
-          "
-        >
-          ✨ Powered by Google Gemini AI
+        <div className="inline-block bg-orange-100 text-orange-600 px-5 py-2 rounded-full font-bold mb-6">
+          🇮🇳 Digital India powered by AI
         </div>
 
-        <h1 className="text-7xl font-black leading-tight">
-          India&apos;s Smart
+        <h1 className="text-6xl md:text-7xl font-black leading-tight">
+          Empowering Citizens
           <br />
-          <span className="gradient-text">AI Civic Companion</span>
+          <span className="gradient-text">with Smart Bharat AI</span>
         </h1>
 
-        <p className="text-slate-600 max-w-3xl mx-auto text-xl mt-8">
-          Experience the future of citizen services with Gemini-powered AI. Find schemes, manage documents and report civic issues instantly.
+        <p className="text-slate-600 max-w-2xl text-xl mt-8">
+          Your intelligent AI companion for government services, schemes, documents and civic support.
         </p>
 
-        <div className="mt-12 flex justify-center gap-6">
+        <div className="mt-12 flex flex-wrap gap-6">
           <a href="#ai">
-            <AIButton>Start Assistant 🚀</AIButton>
+            <AIButton>Ask AI</AIButton>
           </a>
           <a href="#services">
             <AIButton>Explore Services</AIButton>
           </a>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="z-10"
+      >
+        <div className="glass rounded-3xl p-8 shadow-2xl">
+          <h2 className="font-bold text-2xl mb-5">🤖 Smart Bharat Assistant</h2>
+
+          <div className="bg-blue-50 p-5 rounded-2xl mb-4 text-slate-700">
+            How can I apply for a passport?
+          </div>
+
+          <div className="bg-white p-5 rounded-2xl shadow text-slate-700">
+            You need:
+            <br />
+            ✅ Aadhaar Card
+            <br />
+            ✅ Address Proof
+            <br />
+            ✅ Passport Portal Registration
+          </div>
         </div>
       </motion.div>
     </section>

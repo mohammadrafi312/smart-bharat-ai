@@ -3,29 +3,34 @@ import { motion } from 'framer-motion'
 const data = [
   {
     icon: '🤖',
-    title: 'Smart AI Assistant',
-    desc: 'Ask civic questions and receive instant AI-powered guidance in simple language.',
+    title: 'AI Assistant',
+    desc: 'Get instant guidance for civic questions, public services, and everyday government support.',
   },
   {
-    icon: '🏛️',
-    title: 'AI Scheme Finder',
-    desc: 'Get personalized government scheme recommendations based on your profile and eligibility.',
+    icon: '🏛',
+    title: 'Government Services',
+    desc: 'Explore essential services and step-by-step help for schemes, permits, and welfare support.',
   },
   {
-    icon: '📄',
-    title: 'Document Guide',
-    desc: 'Understand required documents and application steps for public services.',
+    icon: '📝',
+    title: 'Report Issues',
+    desc: 'Raise complaints and track civic problems with a clear, simple digital workflow.',
+  },
+  {
+    icon: '📊',
+    title: 'Track Complaints',
+    desc: 'Monitor issue status and stay informed with a transparent government-style dashboard experience.',
   },
   {
     icon: '🌐',
-    title: 'Multilingual Access',
-    desc: 'Connect with government information easily in multiple Indian languages.',
+    title: 'Multilingual Support',
+    desc: 'Access information in multiple Indian languages for broader inclusion and accessibility.',
   },
 ]
 
 export default function Features() {
   return (
-    <section id="services" className="max-w-6xl mx-auto grid md:grid-cols-4 gap-6 px-8 py-20">
+    <section id="services" className="max-w-6xl mx-auto grid gap-6 px-8 py-20 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5">
       {data.map((item, index) => (
         <motion.div
           key={index}
