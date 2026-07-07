@@ -1,25 +1,5 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Features from './components/Features'
-import Stats from './components/Stats'
-import ChatBot from './components/ChatBot'
-import SchemeFinder from './components/SchemeFinder'
-import Complaint from './components/Complaint'
-import Footer from './components/Footer'
+import Dashboard from './components/Dashboard'
 
-function App() {
-  return (
-    <div className="min-h-screen bg-transparent text-slate-900">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Stats />
-      <ChatBot />
-      <SchemeFinder />
-      <Complaint />
-      <Footer />
-    </div>
-  )
+export default function App() {
+  return <Dashboard />
 }
-
-export default App
