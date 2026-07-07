@@ -140,26 +140,47 @@ export default function Dashboard() {
 
   return (
     <div className="bg-[#f4f9ff] text-blue-950 min-h-screen">
-      <nav className="sticky top-0 z-50 bg-white/90 backdrop-blur h-24 flex items-center justify-between px-14 shadow">
-        <div>
-          <h1 className="text-3xl font-black">🏛️ Smart Bharat</h1>
-          <p>AI-Powered Civic Companion</p>
-        </div>
+      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-blue-100 shadow-sm">
+        <div className="max-w-7xl mx-auto h-24 flex items-center justify-between px-8">
+          <div onClick={() => scroll('home')} className="flex items-center gap-4 cursor-pointer hover:scale-105 transition duration-300">
+            <div className="text-5xl">🏛️</div>
+            <div>
+              <h1 className="text-3xl font-black text-blue-950">Smart Bharat</h1>
+              <p className="text-gray-500 font-medium">AI-Powered Civic Companion</p>
+            </div>
+          </div>
 
-        <div className="flex gap-14 text-xl">
-          {[
-            ['Home', 'home'],
-            ['Services', 'services'],
-            ['My Complaints', 'complaints'],
-            ['Resources', 'resources'],
-          ].map((item) => (
-            <button key={item[0]} onClick={() => scroll(item[1])} className="hover:text-blue-600 transition">
-              {item[0]}
+          <div className="hidden md:flex items-center gap-12 text-lg font-semibold">
+            {[
+              ['Home', 'home'],
+              ['Services', 'services'],
+              ['My Complaints', 'complaints'],
+              ['Resources', 'resources'],
+            ].map((item) => (
+              <button key={item[0]} onClick={() => scroll(item[1])} className="relative group hover:text-blue-600 transition">
+                {item[0]}
+                <span className="absolute left-0 -bottom-2 h-1 w-0 bg-blue-600 rounded-full group-hover:w-full transition-all duration-300" />
+              </button>
+            ))}
+          </div>
+
+          <div className="flex items-center gap-5">
+            <select
+              onChange={(e) => setLang(e.target.value)}
+              className="bg-blue-50 px-5 py-3 rounded-full outline-none cursor-pointer font-semibold hover:bg-blue-100 transition"
+              value={lang}
+            >
+              <option value="en">🌐 English</option>
+              <option value="hi">🇮🇳 हिंदी</option>
+              <option value="te">🇮🇳 తెలుగు</option>
+              <option value="ta">🇮🇳 தமிழ்</option>
+            </select>
+
+            <button className="w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-700 text-white text-2xl shadow-lg hover:scale-110 transition duration-300">
+              👤
             </button>
-          ))}
+          </div>
         </div>
-
-        <div>🌐 English 👤</div>
       </nav>
 
       <section id="home" className="grid grid-cols-2 gap-16 p-16">
