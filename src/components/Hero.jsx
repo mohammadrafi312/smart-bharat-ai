@@ -36,7 +36,7 @@ export default function Hero() {
           <span className="gradient-text">AI Civic Companion</span>
         </h1>
 
-        <p className="text-gray-300 max-w-3xl mx-auto text-xl mt-8">
+        <p className="text-slate-600 max-w-3xl mx-auto text-xl mt-8">
           Experience the future of citizen services with Gemini-powered AI. Find schemes, manage documents and report civic issues instantly.
         </p>
 

@@ -37,7 +37,7 @@ export default function Features() {
         >
           <div className="text-5xl mb-5">{item.icon}</div>
           <h2 className="text-xl font-bold">{item.title}</h2>
-          <p className="text-gray-400 mt-3">{item.desc}</p>
+          <p className="text-slate-500 mt-3">{item.desc}</p>
         </motion.div>
       ))}
     </section>

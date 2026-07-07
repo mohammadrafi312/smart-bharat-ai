@@ -11,7 +11,7 @@ export default function Stats() {
       {stats.map((item, index) => (
         <div key={index} className="glass rounded-3xl p-6 text-center">
           <div className="text-3xl font-black gradient-text">{item.value}</div>
-          <p className="text-gray-400 mt-2">{item.label}</p>
+          <p className="text-slate-500 mt-2">{item.label}</p>
         </div>
       ))}
     </section>

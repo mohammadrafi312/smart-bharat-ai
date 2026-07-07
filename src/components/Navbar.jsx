@@ -12,7 +12,7 @@ export default function Navbar() {
       <a href="#home">
         <h1 className="text-2xl font-black gradient-text cursor-pointer">🇮🇳 Smart Bharat AI</h1>
       </a>
-      <div className="hidden md:flex gap-8 text-gray-300">
+      <div className="hidden md:flex gap-8 text-slate-600">
         <a className="hover:text-blue-400 duration-300" href="#home">Home</a>
         <a className="hover:text-blue-400 duration-300" href="#ai">AI Assistant</a>
         <a className="hover:text-blue-400 duration-300" href="#services">Services</a>

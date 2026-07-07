@@ -28,7 +28,7 @@ export default function ChatBot() {
       <select
         value={language}
         onChange={(e) => setLanguage(e.target.value)}
-        className="bg-slate-800 p-3 rounded-xl mb-5"
+        className="bg-slate-50 border border-slate-200 text-slate-700 p-3 rounded-xl mb-5"
       >
         <option>English</option>
         <option>Hindi</option>
@@ -40,13 +40,13 @@ export default function ChatBot() {
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
           placeholder="Ask about schemes, documents, government services..."
-          className="w-full h-40 p-5 rounded-xl bg-slate-800"
+          className="w-full h-40 p-5 rounded-xl bg-slate-50 border border-slate-200 text-slate-700"
         />
         <div className="mt-5">
           <AIButton>{loading ? 'Thinking...' : 'Ask Smart Bharat AI'}</AIButton>
         </div>
         {answer && (
-          <div className="mt-6 bg-slate-800 p-5 rounded-xl whitespace-pre-line">{answer}</div>
+          <div className="mt-6 bg-slate-100 p-5 rounded-xl whitespace-pre-line text-slate-700">{answer}</div>
         )}
       </div>
     </section>
