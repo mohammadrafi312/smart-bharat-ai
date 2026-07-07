@@ -36,18 +36,6 @@ export default function Hero() {
         transition={{ duration: 1 }}
         className="text-left z-10"
       >
-        <motion.div
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 3, repeat: Infinity }}
-          className="text-7xl mb-6"
-        >
-          🤖🇮🇳
-        </motion.div>
-
-        <div className="inline-block bg-orange-100 text-orange-600 px-5 py-2 rounded-full font-bold mb-6">
-          🇮🇳 Digital India powered by AI
-        </div>
-
         <h1 className="text-6xl md:text-7xl font-black leading-tight">
           Empowering Citizens
           <br />
