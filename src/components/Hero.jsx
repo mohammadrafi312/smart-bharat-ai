@@ -1,7 +1,13 @@
+import { motion } from 'framer-motion'
+
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center text-center px-6">
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="text-7xl mb-6">🤖🇮🇳</div>
         <h1 className="text-7xl font-black leading-tight">
           India&apos;s Smart
@@ -19,7 +25,7 @@ export default function Hero() {
             Explore Services
           </button>
         </div>
-      </div>
+      </motion.div>
     </section>
   )
 }
