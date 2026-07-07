@@ -1,16 +1,38 @@
-# React + Vite
+# 🇮🇳 Smart Bharat AI - AI Powered Civic Companion
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Smart Bharat AI is a Generative AI powered civic platform built for PromptWars x Global Prompt Challenge 2026.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🤖 Gemini AI Civic Assistant
+- 🏛 Government Service Recommendation
+- 📄 Document Requirement Assistance
+- 📝 Public Issue Reporting
+- 📊 Complaint Tracking
+- 🌐 Multilingual Support
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 AI Workflow
 
-## Expanding the Oxlint configuration
+User Query
+↓
+Gemini AI Processing
+↓
+Intent Detection
+↓
+Personalized Government Guidance
+↓
+Multilingual Response
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+## 🛠 Tech Stack
+
+- React + Vite
+- Tailwind CSS
+- Google Gemini API
+- Vercel Deployment
+
+
+## Impact
+
+Making government services simpler, faster, and more accessible through AI.
