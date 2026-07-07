@@ -30,6 +30,23 @@ export default function Hero() {
           🤖🇮🇳
         </motion.div>
 
+        <div
+          className="
+            inline-flex
+            items-center
+            gap-2
+            px-5
+            py-2
+            rounded-full
+            bg-blue-100
+            text-blue-700
+            font-semibold
+            mb-8
+          "
+        >
+          ✨ Powered by Google Gemini AI
+        </div>
+
         <h1 className="text-7xl font-black leading-tight">
           India&apos;s Smart
           <br />

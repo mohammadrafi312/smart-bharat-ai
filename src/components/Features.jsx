@@ -33,7 +33,17 @@ export default function Features() {
           whileInView={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.08, rotate: 1 }}
           transition={{ duration: 0.4 }}
-          className="glass rounded-3xl p-8 text-center cursor-pointer shadow-xl"
+          className="
+            glass
+            hover:-translate-y-3
+            hover:scale-105
+            duration-300
+            rounded-3xl
+            p-8
+            text-center
+            cursor-pointer
+            shadow-xl
+          "
         >
           <div className="text-5xl mb-5">{item.icon}</div>
           <h2 className="text-xl font-bold">{item.title}</h2>

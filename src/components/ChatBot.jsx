@@ -35,12 +35,25 @@ export default function ChatBot() {
         <option>Telugu</option>
         <option>Tamil</option>
       </select>
-      <div className="glass p-8 rounded-3xl hover:scale-105 duration-300 shadow-xl">
+      <div className="glass max-w-4xl mx-auto rounded-3xl p-10 shadow-2xl">
         <textarea
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
           placeholder="Ask about schemes, documents, government services..."
-          className="w-full h-40 p-5 rounded-xl bg-slate-50 border border-slate-200 text-slate-700"
+          className="
+            w-full
+            h-40
+            rounded-2xl
+            p-6
+            bg-white/80
+            border
+            border-blue-100
+            outline-none
+            text-slate-800
+            focus:border-blue-500
+            focus:shadow-xl
+            duration-300
+          "
         />
         <div className="mt-5">
           <AIButton>{loading ? 'Thinking...' : 'Ask Smart Bharat AI'}</AIButton>
