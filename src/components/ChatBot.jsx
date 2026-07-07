@@ -22,7 +22,7 @@ export default function ChatBot() {
   }
 
   return (
-    <section className="max-w-4xl mx-auto py-20 px-6">
+    <section id="ai" className="max-w-4xl mx-auto py-20 px-6">
       <h2 className="text-4xl font-bold text-center mb-10">🤖 AI Civic Assistant</h2>
       <select
         value={language}
