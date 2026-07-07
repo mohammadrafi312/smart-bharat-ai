@@ -89,3 +89,65 @@ button:hover {
   background: #3b82f6;
   color: white;
 }
+
+.ai-button {
+  --border_radius: 9999px;
+  --active: 0;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: var(--border_radius);
+  background: transparent;
+  overflow: hidden;
+  transform: scale(calc(1 + (var(--active) * .08)));
+  transition: 0.3s ease;
+}
+
+.ai-button::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #020617;
+  border-radius: inherit;
+  z-index: 1;
+  box-shadow: inset 0 1px white, 0 0 30px rgba(59, 130, 246, 0.4);
+}
+
+.ai-button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, #38bdf8, #8b5cf6, #d946ef);
+  opacity: var(--active);
+  transition: 0.3s;
+}
+
+.ai-button:hover {
+  --active: 1;
+}
+
+.ai-button span {
+  position: relative;
+  z-index: 5;
+  font-weight: 700;
+  color: white;
+}
+
+.ai-button .border-spin {
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: conic-gradient(transparent, #38bdf8, #8b5cf6, transparent);
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

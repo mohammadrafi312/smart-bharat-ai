@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import AIButton from './AIButton'
 
 export default function Complaint() {
   const [id, setId] = useState('')
@@ -14,9 +15,9 @@ export default function Complaint() {
         <input placeholder="Issue Type" className="w-full mb-4 p-3 bg-slate-800 rounded" />
         <input placeholder="Location" className="w-full mb-4 p-3 bg-slate-800 rounded" />
         <textarea placeholder="Describe issue" className="w-full mb-4 p-3 bg-slate-800 rounded" />
-        <button onClick={submit} className="bg-blue-600 px-6 py-3 rounded-xl">
-          Submit Complaint
-        </button>
+        <div onClick={submit}>
+          <AIButton>Submit Complaint</AIButton>
+        </div>
         {id && (
           <p className="mt-5 text-green-400">
             Complaint Registered ✅ Tracking ID: {id}

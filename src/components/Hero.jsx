@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import AIButton from './AIButton'
 
 export default function Hero() {
   return (
@@ -41,14 +42,10 @@ export default function Hero() {
 
         <div className="mt-12 flex justify-center gap-6">
           <a href="#ai">
-            <button className="bg-blue-600 px-10 py-4 rounded-2xl text-lg font-bold transition duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/50">
-              Start Assistant 🚀
-            </button>
+            <AIButton>Start Assistant 🚀</AIButton>
           </a>
           <a href="#services">
-            <button className="glass px-10 py-4 rounded-2xl text-lg transition duration-300 hover:scale-110 hover:bg-white/10">
-              Explore Services
-            </button>
+            <AIButton>Explore Services</AIButton>
           </a>
         </div>
       </motion.div>

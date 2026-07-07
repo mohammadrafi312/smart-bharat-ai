@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import AIButton from './AIButton'
 import { askGemini } from '../services/gemini'
 
 export default function ChatBot() {
@@ -41,9 +42,9 @@ export default function ChatBot() {
           placeholder="Ask about schemes, documents, government services..."
           className="w-full h-40 p-5 rounded-xl bg-slate-800"
         />
-        <button onClick={handleAsk} className="mt-5 bg-blue-600 px-6 py-3 rounded-xl">
-          {loading ? 'Thinking...' : 'Ask Smart Bharat AI'}
-        </button>
+        <div className="mt-5">
+          <AIButton>{loading ? 'Thinking...' : 'Ask Smart Bharat AI'}</AIButton>
+        </div>
         {answer && (
           <div className="mt-6 bg-slate-800 p-5 rounded-xl whitespace-pre-line">{answer}</div>
         )}

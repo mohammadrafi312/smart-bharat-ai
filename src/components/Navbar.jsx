@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import AIButton from './AIButton'
 
 export default function Navbar() {
   return (
@@ -18,9 +19,7 @@ export default function Navbar() {
         <a className="hover:text-blue-400 duration-300" href="#complaints">Complaints</a>
       </div>
       <a href="#ai">
-        <button className="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-2 rounded-xl font-semibold hover:scale-105 duration-300">
-          Launch AI
-        </button>
+        <AIButton>Launch AI</AIButton>
       </a>
     </motion.nav>
   )
