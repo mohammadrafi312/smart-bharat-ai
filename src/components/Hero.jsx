@@ -3,6 +3,10 @@ import { motion } from 'framer-motion'
 export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center text-center px-6 relative overflow-hidden">
+      <div className="absolute top-40 left-20 text-6xl animate-bounce opacity-30">⚙️</div>
+      <div className="absolute bottom-40 right-20 text-7xl animate-pulse opacity-30">✨</div>
+      <div className="absolute top-1/2 right-40 text-5xl animate-bounce opacity-30">🔷</div>
+
       <motion.div
         animate={{
           scale: [1, 1.2, 1],
